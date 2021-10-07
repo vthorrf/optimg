@@ -14,3 +14,4 @@ Imports: ucminf (>= 1.1-4)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/vthorrf/optimg
