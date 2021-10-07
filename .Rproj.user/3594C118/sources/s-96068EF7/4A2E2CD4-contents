@@ -1,0 +1,24 @@
+#exportPattern("^[[:alpha:]]+")
+export(fishburn)
+export(ggum)
+export(optscr)
+export(pcm)
+export(plm)
+export(rasch)
+export(rsm)
+export(simData)
+export(sirm)
+importFrom("graphics", "par")
+importFrom("stats", "BIC", "cor", "dbeta", "dbinom", "dnorm", "optim",
+           "plogis", "qbinom", "rbeta", "rbinom", "rnorm", "runif",
+           "var", "poly")
+importFrom("utils", "data")
+importFrom("LaplacesDemon", "GIV", "IterativeQuadrature", "LaplaceApproximation", "LaplacesDemon",
+           "PMC", "VariationalBayes", "as.parm.names", "dcat", "interval", "qtrunc",
+           "is.bayesian", "is.data", "is.model", "rcat")
+importFrom("parallel", "detectCores")
+importFrom("compiler", "cmpfun")
+importFrom("tidyr", "gather")
+importFrom("matrixStats", "rowCumsums")
+importFrom("GA", "ga")
+importFrom("ucminf", "ucminf")

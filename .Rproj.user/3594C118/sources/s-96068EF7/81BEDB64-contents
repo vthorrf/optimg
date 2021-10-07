@@ -1,0 +1,16 @@
+Package: optimg
+Type: Package
+Title: General-purpose Gradient-based Optimization
+Version: 0.1.0
+Year: 2021, October
+Author: Vithor Rosa Franco <vithorfranco@gmail.com>
+Maintainer: Vithor Rosa Franco <vithorfranco@gmail.com>
+Description: This package is a general purpose tool for helping users to implement
+             gradient descent methods for function optimization. Currently, the
+             Steepest 2-Groups Gradient Descent and the Adaptive Moment Estimation
+             (Adam) are the methods implemented. Other methods will be implemented
+             in the future.
+Imports: ucminf (>= 1.1-4)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true

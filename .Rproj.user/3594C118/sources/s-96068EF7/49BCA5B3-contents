@@ -1,0 +1,18 @@
+
+require(optimg)
+
+x <- seq(-3,3,len=100)
+y <- rnorm(100, 2 + {1.2*x}, 1)
+
+fn <- function(par, X) {
+  mu <- par[1] + {par[2] * X}
+  rmse <- sqrt(mean({y-mu}^2))
+  return(rmse)
+}
+
+optim(c(0,0),fn,X=x,method="Nelder-Mead")
+optim(c(0,0),fn,X=x,method="BFGS")
+optim(c(0,0),fn,X=x,method="CG")
+optim(c(0,0),fn,X=x,method="L-BFGS-B")
+optimg(c(0,0),fn,X=x,method="ADAM")
+optimg(c(0,0),fn,X=x,method="STGD")

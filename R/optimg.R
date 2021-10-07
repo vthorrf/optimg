@@ -1,0 +1,33 @@
+# Wrapper
+optimg <- function(par, fn, gr=NULL, ..., method=c("STGD","ADAM"),
+                   Interval=1e-6, maxit=100, tol=1e-8, full=F, verbose=F) {
+  ### Initial checks
+  if(is.null(gr)) {
+    gr <- grad
+  }
+  if(is.vector(method)) {
+    method = method[1]
+  }
+  if({length(par)==1} & {method=="STGD"}) {
+    method="ADAM"
+  }
+
+  ### Select method
+  if(method=="STGD"){
+    Result <- STDM(fn, par, gr, ..., Interval=Interval, maxit=maxit, tol=tol,
+                   verbose=verbose)
+  } else if(method=="ADAM"){
+    Result <- ADAM(fn, par, gr, ..., Interval=Interval, maxit=maxit, tol=tol,
+                   verbose=verbose)
+  } else stop("Unkown method. Please, see optimg's documentation.")
+
+  ### Return results
+  if(full==T) {
+    return(Result)
+  } else if(full==F) {
+    Results <- list("par"=Result$par, "value"=Result$value,
+                    "counts"=length(Result$steps),
+                    "convergence"={length(Result$steps) == maxit} * 1)
+    return(Results)
+  } else stop("Incorrect value for argument 'full'.")
+}
