@@ -11,3 +11,5 @@ Using the 'remotes' package:
 
     install.packages("remotes")
     remotes::install_github("vthorrf/optimg")
+
+[![](https://cranlogs.r-pkg.org/badges/optimg)](https://cran.r-project.org/package=optimg)
