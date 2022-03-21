@@ -1,6 +1,5 @@
 optimg: General-purpose Gradient-based Optimization (version 0.1.0)
 =============
-[![Travis-CI Build Status](https://travis-ci.org/vthorrf/optimg.svg?branch=master)](https://travis-ci.org/vthorrf/optimg)
 [![](https://cranlogs.r-pkg.org/badges/optimg)](https://CRAN.R-project.org/package=optimg)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/optimg)](https://CRAN.R-project.org/package=optimg)
 
