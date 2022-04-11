@@ -5,8 +5,6 @@ optimg: General-purpose Gradient-based Optimization (version 0.1.2)
     <a href="https://github.com/vthorrf/optimg/releases"><img src="https://img.shields.io/github/v/release/vthorrf/optimg?display_name=tag&sort=semver"/></a>
     <a href="https://www.r-pkg.org/pkg/optimg"><img src="https://www.r-pkg.org/badges/version/optimg" alt="CRAN version"/></a>
     <a href="https://www.r-pkg.org/pkg/optimg"><img src="https://cranlogs.r-pkg.org/badges/grand-total/optimg" alt="CRAN RStudio mirror downloads"/></a>
-    <a href="https://app.codecov.io/gh/vthorrf/optimg"><img src="https://codecov.io/gh/vthorrf/optimg/branch/main/graph/badge.svg?token=YUCO8ULBCM" alt="Code coverage"/></a>
-    <a href="https://github.com/vthorrf/optimg/actions"><img src="https://github.com/vthorrf/optimg/workflows/R-CMD-check/badge.svg" alt="R-CMD-check" /></a>
     <a href="https://cranchecks.info/pkgs/optimg"><img src="https://cranchecks.info/badges/worst/optimg" alt="CRAN checks"/></a>
 </p>
 
