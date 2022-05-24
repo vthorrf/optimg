@@ -1,5 +1,4 @@
+useDynLib(optimg, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
 #exportPattern("^[[:alpha:]]+")
-export(optimg)
-importFrom("ucminf", "ucminf")
-importFrom("stats", "optim", "rnorm", "sd")
-importFrom("utils", "setTxtProgressBar", "txtProgressBar")
+export(optimg, gradient)
