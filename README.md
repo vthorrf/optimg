@@ -8,7 +8,7 @@ optimg: General-purpose Gradient-based Optimization (version 0.1.2)
     <a href="https://cranchecks.info/pkgs/optimg"><img src="https://cranchecks.info/badges/worst/optimg" alt="CRAN checks"/></a>
 </p>
 
-This package is a general purpose tool for helping users to implement gradient descent methods for function optimization. Currently, the Steepest 2-Groups Gradient Descent and the Adaptive Moment Estimation (Adam) are the methods implemented. Other methods will be implemented in the future.
+This package is a general purpose tool for helping users to implement gradient descent methods for function optimization. Currently, the Steepest Gradient Descent, the Steepest 2-Groups Gradient Descent, the Levenberg–Marquardt algorithm, and the Adaptive Moment Estimation (Adam) are the methods implemented. Other methods will be implemented in the future.
 
 This package should be considered experimental in this point of development.
 
