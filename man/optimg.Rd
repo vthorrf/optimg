@@ -1,11 +1,11 @@
 \name{optimg}
 \alias{optimg}
-\title{General-purpose Gradient-based Optimization}
+\title{General-Purpose Gradient-Based Optimization}
 \description{
 General-purpose optimization based on gradient descent algorithms. It is greatly inspired on the stats::optim function, aiming at increased usability and adaptability for optim's users.
 }
 \usage{
-optimg(par, fn, gr=NULL, ..., method=c("STGD","ADAM"),
+optimg(par, fn, gr=NULL, ..., method=c("SGD","STGD","LMM","ADAM"),
        Interval=1e-6, maxit=100, tol=1e-8, full=F, verbose=F)
 }
 \arguments{
@@ -23,7 +23,11 @@ optimg(par, fn, gr=NULL, ..., method=c("STGD","ADAM"),
 \details{
 As with the optim function, ... must be matched exactly. Also as with optim, optimg performs minimization. All the methods implemented are the "steepest" variation of the original methods. This means that tuning parameters are optimized at each step automatically. This makes the algorithms slower, but also more effective, especially for complex models.
 
-The default method (unless the length of par is equal to 1; in which case, the default is "ADAM") is an implementation of the Steepest 2-Group Gradient Descent algorithm. This algorithm is a variation of the Steepest Gradient Descent method which calculates different step sizes for two groups of gradients: those within a standard deviation (below or above), and those beyond a standard deviation (below or above).
+The default method is the traditional Steepest Gradient Descent ("SGD") algorithm.
+
+Method "STGD" is a variation of the Steepest Gradient Descent method which optimizes different step sizes for two groups of gradients: those within a standard deviation (below or above the mean), and those beyond a standard deviation (below or above the mean). If the specified function has only one parameter, SGD is used instead.
+
+Method "LMM" is the Levenberg-Marquardt method. This method computes an approximate regularized truncated Hessian at each step. The LMM is a robust version of the Gaussian-Newton method, which means that it can better handle far off initial values.
 
 Method "ADAM" is the Adaptive Moment Estimation method. This method computes adaptive learning rates for each parameter. Adam stores both exponentially decaying average of past squared gradients, as well as measures of momentum.
 }
@@ -45,17 +49,19 @@ x <- seq(-3,3,len=100)
 y <- rnorm(100, 2 + {1.2*x}, 1)
 
 # RMSE cost function
-fn <- function(par, X) {
+fn <- function(par, Y, X) {
   mu <- par[1] + {par[2] * X}
-  rmse <- sqrt(mean({y-mu}^2))
+  rmse <- sqrt(mean({Y-mu}^2))
   return(rmse)
 }
 
 # Compare optimization methods
-optim(c(0,0),fn,X=x,method="Nelder-Mead")
-optim(c(0,0),fn,X=x,method="BFGS")
-optim(c(0,0),fn,X=x,method="CG")
-optim(c(0,0),fn,X=x,method="L-BFGS-B")
-optimg(c(0,0),fn,X=x,method="ADAM")
-optimg(c(0,0),fn,X=x,method="STGD")
+optim(c(0,0), fn, Y=y, X=x, method="Nelder-Mead")
+optim(c(0,0), fn, Y=y, X=x, method="BFGS")
+optim(c(0,0), fn, Y=y, X=x, method="CG")
+optim(c(0,0), fn, Y=y, X=x, method="L-BFGS-B")
+optimg(c(0,0), fn, Y=y, X=x, method="SGD")
+optimg(c(0,0), fn, Y=y, X=x, method="STGD")
+optimg(c(0,0), fn, Y=y, X=x, method="LMM")
+optimg(c(0,0), fn, Y=y, X=x, method="ADAM")
 }

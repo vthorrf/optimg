@@ -1,17 +1,27 @@
-Package: optimg
 Type: Package
-Title: General-purpose Gradient-based Optimization
-Version: 0.1.0
-Year: 2021, October
-Author: Vithor Rosa Franco <vithorfranco@gmail.com>
+Package: optimg
+Title: General-Purpose Gradient-Based Optimization
+Version: 0.2.0
+Date: 2022-05-19
+Authors@R: c(person(given = "Vithor Rosa", family = "Franco", role = c("aut", "cre", "cph"), email = "vithorfranco@gmail.com"), person(given="Alexandre Augusto de Sá", family = "dos Santos", role = c("aut", "cph")), person(given = "Felipe Ofugi", family = "Hara", role = c("aut", "cph")))
+Author: Vithor Rosa Franco [aut, cre, cph],
+	  Alexandre Augusto de Sá dos Santos [aut, cph],
+	  Felipe Ofugi Hara [aut, cph]
 Maintainer: Vithor Rosa Franco <vithorfranco@gmail.com>
-Description: This package is a general purpose tool for helping users to implement
-             gradient descent methods for function optimization. Currently, the
-             Steepest 2-Groups Gradient Descent and the Adaptive Moment Estimation
-             (Adam) are the methods implemented. Other methods will be implemented
-             in the future.
-Imports: ucminf (>= 1.1-4)
+Description: Provides general purpose tools for helping users to implement steepest
+             gradient descent methods for function optimization; for details see
+             Ruder (2016) <arXiv:1609.04747v2>. Currently, the Stepeest Gradient
+		 Descent, the Steepest 2-Groups Gradient Descent and the Adaptive Moment
+             Estimation (Adam) are the methods implemented. Other methods will be
+             implemented in the future.
 License: GPL-3
-Encoding: UTF-8
+Depends: R(>= 4.0)
+Imports: Rcpp (>= 1.0.8)
+LinkingTo: Rcpp,
+           RcppArmadillo
+SystemRequirements: C++11
 LazyData: true
 URL: https://github.com/vthorrf/optimg
+BugReports: https://github.com/vthorrf/optimg/issues
+Encoding: UTF-8
+NeedsCompilation: yes
