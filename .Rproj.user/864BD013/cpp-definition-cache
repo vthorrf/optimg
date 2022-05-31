@@ -1,0 +1,161 @@
+[
+    {
+        "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+        "file_last_write": 1653248994.0,
+        "definitions": [
+            {
+                "usr": "c:@F@grad#$@N@Rcpp@S@Function_Impl>#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "grad(Rcpp::Function, Rcpp::NumericVector, double)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 11,
+                "column": 21
+            },
+            {
+                "usr": "c:@F@binCoef#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "binCoef(int, int)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 25,
+                "column": 5
+            },
+            {
+                "usr": "c:@F@gradN#$@N@Rcpp@S@Function_Impl>#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gradN(Rcpp::Function, Rcpp::NumericVector, double, int)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 32,
+                "column": 21
+            },
+            {
+                "usr": "c:@F@reltol#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "reltol(double, double)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 74,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@order_#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "order_(Rcpp::NumericVector)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 78,
+                "column": 15
+            },
+            {
+                "usr": "c:@F@mean_v#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mean_v(Rcpp::NumericVector, int)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 84,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@crit_v#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "crit_v(Rcpp::NumericMatrix)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 96,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@steepSGD#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "steepSGD(Rcpp::NumericVector, Rcpp::List)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 109,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@steepSTGD#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "steepSTGD(Rcpp::NumericVector, Rcpp::List)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 117,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@steepLMM#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "steepLMM(Rcpp::NumericVector, Rcpp::List)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 130,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@fibonacci#d#d#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "fibonacci(double, double, Rcpp::List, int)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 141,
+                "column": 8
+            },
+            {
+                "usr": "c:Algorithms.cpp@T@funcPtr",
+                "kind": 8,
+                "parent_name": "",
+                "name": "funcPtr",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 173,
+                "column": 18
+            },
+            {
+                "usr": "c:@F@putFunPtrInXPtr#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "putFunPtrInXPtr(std::string)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 175,
+                "column": 15
+            },
+            {
+                "usr": "c:@F@nelder_mead#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "nelder_mead(std::string, Rcpp::NumericVector, Rcpp::List)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 186,
+                "column": 12
+            },
+            {
+                "usr": "c:@F@SGD#$@N@Rcpp@S@Function_Impl>#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#S0_#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "SGD(Rcpp::Function, Rcpp::NumericVector, Rcpp::Function, double, int, double, bool)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 305,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@STGD#$@N@Rcpp@S@Function_Impl>#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#S0_#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "STGD(Rcpp::Function, Rcpp::NumericVector, Rcpp::Function, double, int, double, bool)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 382,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@LMM#$@N@Rcpp@S@Function_Impl>#@N@Rcpp@ST>1#T@PreserveStorage#$@N@Rcpp@S@Vector>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#S0_#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "LMM(Rcpp::Function, Rcpp::NumericVector, Rcpp::Function, double, int, double, bool)",
+                "file": "C:/Users/vrfra/Documents/GitHub/optimg/src/Algorithms.cpp",
+                "line": 463,
+                "column": 6
+            }
+        ]
+    }
+]

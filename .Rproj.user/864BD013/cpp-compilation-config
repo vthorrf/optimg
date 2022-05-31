@@ -1,0 +1,28 @@
+{
+    "args": [
+        "-std=gnu++11",
+        "-IC:/PROGRA~1/R/R-41~1.2/include",
+        "-DNDEBUG",
+        "-IC:/Users/vrfra/Documents/GitHub/optimg/inst/include",
+        "-DBOOST_NO_LONG_LONG",
+        "-DBOOST_NO_AUTO_PTR",
+        "-DBOOST_BIND_GLOBAL_PLACEHOLDERS",
+        "-DRCPP_NO_RTTI",
+        "-DRCPP_USE_UNWIND_PROTECT",
+        "-IC:/Users/vrfra/Documents/R/win-library/4.1/Rcpp/include",
+        "-IC:/Users/vrfra/Documents/R/win-library/4.1/RcppArmadillo/include",
+        "-nostdinc",
+        "-IC:/rtools40/mingw64/include/c++/8.3.0",
+        "-IC:/rtools40/mingw64/include/c++/8.3.0/x86_64-w64-mingw32",
+        "-IC:/rtools40/mingw64/include/c++/8.3.0/backward",
+        "-IC:/rtools40/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include",
+        "-IC:/rtools40/mingw64/include",
+        "-IC:/rtools40/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include-fixed",
+        "-IC:/rtools40/mingw64/x86_64-w64-mingw32/include"
+    ],
+    "pch": "RcppArmadillo",
+    "is_cpp": true,
+    "hash": "165330913916533285431653328560",
+    "compiler": "2977220399556355138",
+    "rversion": "4.1.2"
+}

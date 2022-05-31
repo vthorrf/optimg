@@ -11,7 +11,7 @@ optimg(par, fn, gr=NULL, ..., method=c("SGD","STGD","LMM","ADAM"),
 \arguments{
    \item{par}{Initial values for the parameters to be optimized over.}
    \item{fn}{A function to be minimized. It should return a scalar result.}
-   \item{gr}{A function to return the gradient. Should include "Interval" as an argument, even if not used. If it is NULL, a finite-difference approximation will be used.}
+   \item{gr}{A function to return the gradient. If a function is not provided, a finite-difference approximation will be used.}
    \item{...}{Further arguments to be passed to fn and gr.}
    \item{method}{The method to be used. See ‘Details’.}
    \item{Interval}{The epsilon difference to be used by gr.}
